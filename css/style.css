@@ -96,6 +96,7 @@ ul{
     background-color:var(--background-color);
     padding: 200px 0;
     text-align: center;
+    background-image: url('../img/background.jpg');
 }
 .title-hero{
     font-weight: 900;
