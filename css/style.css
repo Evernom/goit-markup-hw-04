@@ -148,6 +148,7 @@ ul{
  clip-path: inset(50%);
  margin: -1px;
 } 
+
 .style-advantages{
     display: flex;
     flex-wrap: wrap;
@@ -155,33 +156,6 @@ ul{
 }
 .advantages-list{
     flex-basis: calc((100% - 90px) / 4);
-}
-.advantages-list::before{
-    content: '';
-    height: 120px;
-    margin-bottom: 30px;
-    display: block;
-    background-color: #F5F4FA;
-    border-radius: 4px;
-}
-.antenna::before{
-    background-image: url(.././img/svg/antenna\ 1.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.clock::before{
-    background-image: url(.././img/svg/clock\ 1.svg);background-repeat: no-repeat;
-    background-position: center;
-}
-.diagram::before{
-    background-image: url(.././img/svg/diagram\ 1.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.astronaut::before{
-    background-image: url(.././img/svg/astronaut\ 1.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 .title-advantages{
     font-size: 14px;
