@@ -8,6 +8,8 @@
   --gradient-color: rgba(47, 48, 58, 0.4);
   --section-color: #F5F4FA;
   --title-button-color: #188CE8;
+  --icon-color: #AFB1B8;
+  --social-footer-color: rgba(255, 255, 255, 0.1);
   --brand-font: "Roboto";
 }
 body{
@@ -75,9 +77,30 @@ ul{
     font-size: 14px;
     line-height: 1.14285714;
     letter-spacing: 0.02em;
-    display: block;
+    display: inline-flex;
     padding-top: 32px;
     padding-bottom: 32px;
+    align-items: center;
+}
+.envelope-icon{
+    fill: currentColor;
+}
+.envelope-icon:hover,
+.envelope-icon:focus{
+    fill: currentColor;
+}
+.envelope-text{
+    margin-left: 10px;
+}
+.smartphone-icon{
+    fill: currentColor;
+}
+.smartphone-icon:hover,
+.smartphone-icon:focus{
+    fill: currentColor;
+}
+.smartphone-text{
+    margin-left: 10px;
 }
 .decorate-contact .link{
     color: var(--button-link-color);   
@@ -157,6 +180,16 @@ ul{
 .advantages-list{
     flex-basis: calc((100% - 90px) / 4);
 }
+.advantages-icon{
+    width: 270px;
+    height: 120px;
+    background-color: var(--section-color);
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
 .title-advantages{
     font-size: 14px;
     line-height: 1.14285714;
@@ -196,7 +229,7 @@ ul{
     flex-wrap: wrap;
     gap: 30px;
 }
-.visit-card li{
+.visit-card > li{
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color:var(--logo-footer-color);
@@ -216,11 +249,78 @@ ul{
     line-height: 1.1875;
     letter-spacing: 0.03em;
     color:var(--adult-color);
-    margin-bottom: 30px;
+    margin-bottom: 16px;
 }
+
 .section-card{
     background-color:var(--section-color);
     text-align: center;
+}
+.social-card{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.list-social{
+    margin-bottom: 30px;
+    margin-right: 10px;
+}
+.list-social:last-child{
+    margin-right: 0;
+}
+.social-link{
+    display: inline-block;
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--icon-color);
+}
+.social-link:hover,
+.social-link:focus{
+    color: var(--logo-footer-color);
+    background-color: var(--button-link-color);
+}
+.icon-social{
+    fill: currentColor
+}
+.title-clients{
+    font-size: 36px;
+    line-height: 1.16666667;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+.clients-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+}
+.client-card{
+margin-right: 30px;
+}
+.client-card:last-child{
+    margin-right: 0;
+}
+.clients-link{
+    width: 170px;
+    height: 92px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 16px 32px;
+    color: var(--icon-color);
+    border: 1px solid var(--icon-color);
+}
+.clients-icon{
+    fill: currentColor;
+}
+.clients-link:hover,
+.clients-link:focus{
+     border: 1px solid var(--button-link-color);
+     color: var(--button-link-color);
 }
 .title-card{
     font-size: 36px;
@@ -336,4 +436,46 @@ ul{
 .adress-tell:hover,
 .adress-tell:focus{
     color:var(--button-link-color);
+}
+.footer-flex{
+ display: flex;
+}
+.footer-socials{
+    margin-left: 70px;
+    margin-top: 72px;
+}
+.title-footer{
+    font-size: 14px;
+    line-height: 1.14285714;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--logo-footer-color);
+}
+.social-list{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.social-item{
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.social-item:last-child{
+    margin-right: 0;
+}
+.footer-link{
+    display: inline-block;
+    background-color: var(--social-footer-color);
+    color: var(--logo-footer-color);
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 50%;
+}
+.footer-link:hover,
+.footer-link:focus{
+    background-color: var(--button-link-color);
+}
+.social-icon{
+    fill: currentColor;
 }
